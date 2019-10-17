@@ -1,5 +1,5 @@
 /** @file
- *  @brief MAVLink comm protocol built from ardupilotmega.xml
+ *  @brief MAVLink comm protocol built from vcu_lcs.xml
  *  @see http://mavlink.org
  */
 #pragma once

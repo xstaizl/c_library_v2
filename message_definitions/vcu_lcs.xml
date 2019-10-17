@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<mavlink>
+  <version>3</version>
+  <messages>
+    <message id="221" name="VCU_LCS1">
+      <description>VCU to LCS pack1</description>
+      <field type="uint64_t" name="lcs1buf">All 64 bit data</field>
+    </message>
+    <message id="222" name="VCU_LCS2">
+      <description>VCU to LCS pack2</description>
+      <field type="uint64_t" name="lcs2buf">All 64 bit data</field>
+    </message>
+    <message id="207" name="VCU_LCS3">
+      <description>VCU to LCS pack3</description>
+      <field type="uint64_t" name="lcs3buf">All 64 bit data</field>
+    </message>
+    <message id="208" name="ControlBox">
+      <description>Control Box</description>
+      <field type="uint64_t" name="ctrlbox">All 64 bit data</field>
+    </message>
+    <message id="209" name="SolenoidSpeed">
+      <description>Solenoid valve feedback current and speed sensor</description>
+      <field type="uint64_t" name="solspeed">All 64 bit data</field>
+    </message>
+    <message id="58" name="Solenoid">
+      <description>Solenoid valve feedback current</description>
+      <field type="uint64_t" name="sol">All 64 bit data</field>
+    </message>
+    <message id="210" name="Solenoid2">
+      <description>Solenoid valve feedback current</description>
+      <field type="uint64_t" name="sol2">All 64 bit data</field>
+    </message>
+    <message id="78" name="MANUAL_CONTROL_CUS">
+      <description>This message provides an API for manually controlling the vehicle using standard joystick axes nomenclature, along with a joystick-like input device. Unused axes can be disabled an buttons are also transmit as boolean values of their </description>
+      <field type="uint8_t" name="target">The system to be controlled.</field>
+      <field type="int16_t" name="x">X-axis, normalized to the range [-1000,1000]. A value of INT16_MAX indicates that this axis is invalid. Generally corresponds to forward(1000)-backward(-1000) movement on a joystick and the pitch of a vehicle.</field>
+      <field type="int16_t" name="y">Y-axis, normalized to the range [-1000,1000]. A value of INT16_MAX indicates that this axis is invalid. Generally corresponds to left(-1000)-right(1000) movement on a joystick and the roll of a vehicle.</field>
+      <field type="int16_t" name="z">Z-axis, normalized to the range [-1000,1000]. A value of INT16_MAX indicates that this axis is invalid. Generally corresponds to a separate slider movement with maximum being 1000 and minimum being -1000 on a joystick and the thrust of a vehicle. Positive values are positive thrust, negative values are negative thrust.</field>
+      <field type="int16_t" name="r">R-axis, normalized to the range [-1000,1000]. A value of INT16_MAX indicates that this axis is invalid. Generally corresponds to a twisting of the joystick, with counter-clockwise being 1000 and clockwise being -1000, and the yaw of a vehicle.</field>
+      <field type="uint16_t" name="buttons">A bitfield corresponding to the joystick buttons' current state, 1 for pressed, 0 for released. The lowest bit corresponds to Button 1.</field>
+      <field type="uint16_t" name="buttons2">A bitfield corresponding to the joystick buttons' current state, 1 for pressed, 0 for released. The lowest bit corresponds to Button 1.</field>
+    </message>
+  </messages>
+</mavlink>
